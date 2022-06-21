@@ -2,18 +2,21 @@
   <div id="app">
     <TheHeader/>
     <TheFooterTop/>
+    <TheFooterBottom/>
   </div>
 </template>
 
 <script>
 import TheHeader from './components/TheHeader.vue';
 import TheFooterTop from './components/TheFooterTop.vue';
+import TheFooterBottom from './components/TheFooterBottom.vue';
 
 export default {
   name: 'App',
   components: {
     TheHeader,
-    TheFooterTop
+    TheFooterTop,
+    TheFooterBottom
 }
 }
 </script>
