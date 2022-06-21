@@ -72,38 +72,35 @@ export default {
 
 
 <style lang="scss" scoped>
-@import '../assets/css/variables.scss';
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    .row {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1.25rem 0;
+@import '@/assets/css/variables.scss';
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 0;
 
-        .col {
+    .col {
 
-            ul {
-                display: flex;
+        ul {
+            display: flex;
 
-                li {
-                    border-bottom: 2px solid transparent;
-                    padding: 1.875rem 1.875rem 1.875rem 0;
-                    font-weight: 500;
+            li {
+                border-bottom: 2px solid transparent;
+                text-transform: uppercase;
+                padding: 1.875rem 1.875rem 1.875rem 0;
+                font-weight: 500;
 
-                    &:hover {
-                        color: $ColorPrimary;
-                        border-bottom: 2px solid $ColorPrimary;
-                    }
+                &:hover {
+                    color: $ColorPrimary;
+                    border-bottom: 2px solid $ColorPrimary;
                 }
+            }
 
-                li:last-child {
-                    padding-right: 0;
-                }
+            li:last-child {
+                padding-right: 0;
             }
         }
     }
-
 }
+
 </style>
