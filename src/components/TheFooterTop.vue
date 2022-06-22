@@ -7,23 +7,23 @@
                         <div>
                             <ul>
                                 <li><h5>Dc Comics</h5></li>
-                                <li v-for="(link, i) in linksFooter.dcComics" :key="i">{{ link.name }} <a :href="link.href"></a></li>
+                                <li v-for="(link, i) in linksFooter.dcComics" :key="i"><a :href="link.href">{{ link.name }} </a></li>
                                 <ul>
                                     <li><h5>shop</h5></li>
-                                    <li v-for="(link, i) in linksFooter.shop" :key="i">{{ link.name }} <a :href="link.href"></a></li>
+                                    <li v-for="(link, i) in linksFooter.shop" :key="i"><a :href="link.href">{{ link.name }}</a></li>
                                 </ul>
                             </ul>
                         </div>
                         <div>
                             <ul>
                                 <li><h5>Dc</h5></li>
-                                <li v-for="(link, i) in linksFooter.dc" :key="i">{{ link.name }} <a :href="link.href"></a></li>
+                                <li v-for="(link, i) in linksFooter.dc" :key="i"><a :href="link.href">{{ link.name }} </a></li>
                             </ul>
                         </div>
                         <div>
                             <ul>
                                 <li><h5>Sites</h5></li>
-                                <li v-for="(link, i) in linksFooter.sites" :key="i">{{ link.name }} <a :href="link.href"></a></li>
+                                <li v-for="(link, i) in linksFooter.sites" :key="i"> <a :href="link.href">{{ link.name }}</a></li>
                             </ul>
                         </div>
                     </div>
@@ -160,7 +160,9 @@ export default {
 @import '@/assets/css/variables.scss';
 
 .bg-footer {
-    background-image: url('@/assets/img/footer-bg.jpg');
+    background-image: url("@/assets/img/footer-bg.jpg");
+    background-repeat: repeat;
+    background-position: left center;
     .row {
         display: flex;
 
@@ -179,13 +181,17 @@ export default {
 
             li {
                 padding-bottom: .25rem;
-                color: $ColorGrey;
                 font-size: .8125rem;
+
+                a {
+                    color: $ColorGrey;
+                    text-decoration: none;
+                }
             }
         }
         .col:last-child {
             flex-grow: 1;
-            background-image: url('@/assets/img/dc-logo-bg.png');
+            background-image: url("@/assets/img/dc-logo-bg.png");
             background-repeat: no-repeat;
             background-position: center right;
         }

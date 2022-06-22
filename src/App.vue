@@ -4,7 +4,6 @@
     <TheBanner/>
     <TheFooterTop/>
     <TheFooterBottom/>
-
   </div>
 </template>
 

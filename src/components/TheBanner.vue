@@ -5,8 +5,7 @@
                 <ul>
                     <li v-for="(link, i) in linkBanner" :key="i">
                         <a :href="link.href">
-                            <img :src="'@/assets/img/' + link.src" alt="">
-                            <!-- <img src="@/assets/img/buy-comics-digital-comics.png" alt=""> -->
+                            <img :src="require('@/assets/img/' + link.src)" :alt="link.name">
                             <h4>{{ link.name }}</h4>
                         </a>
                     </li>
@@ -25,31 +24,26 @@ export default {
                 {
                     name: 'Digital Comics',
                     src: 'buy-comics-digital-comics.png',
-                    alt: 'Digital Comics',
                     href: '#'
                 },
                 {
                     name: 'DC Merchandise',
                     src: 'buy-comics-merchandise.png',
-                    alt: 'DC Merchandise',
                     href: '#'
                 },
                 {
                     name: 'Subscription',
-                    src: 'buy-comics-subscriptiona.png',
-                    alt: 'Subscription',
+                    src: 'buy-comics-subscriptions.png',
                     href: '#'
                 },
                 {
                     name: 'Comics Shop locator',
                     src: 'buy-comics-shop-locator.png',
-                    alt: 'Shop Locator',
                     href: '#'
                 },
                 {
                     name: 'Dc Power Visa',
-                    src: 'buy-dc-power-visa',
-                    alt: 'DC Merchandise',
+                    src: 'buy-dc-power-visa.svg',
                     href: '#'
                 },
             ]
@@ -69,11 +63,8 @@ export default {
         
         ul {
             display: flex;
-            justify-content: space-between;
-
-            li {
-                max-width: 45px;
-            }
+            justify-content: space-around;
+            align-items: center;
 
             li a {
                 display: flex;
@@ -85,9 +76,10 @@ export default {
                 text-transform: uppercase;
 
                 img {
-                    width: 100%;
+                    max-width: 50px;
                     margin-right: .9375rem;
                 }
+
             }
         }
     }
