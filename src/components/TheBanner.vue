@@ -5,7 +5,7 @@
                 <ul>
                     <li v-for="(link, i) in linkBanner" :key="i">
                         <a :href="link.href">
-                            <img :src="require('@/assets/img/' + link.src)" :alt="link.name">
+                            <img :src="require('../assets/img/' + link.src)" :alt="link.name">
                             <h4>{{ link.name }}</h4>
                         </a>
                     </li>
@@ -53,7 +53,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/css/variables.scss';
+@import '../assets/css/variables.scss';
 
 .bg-banner {
     background-color: $ColorPrimary;

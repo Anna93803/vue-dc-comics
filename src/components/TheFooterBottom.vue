@@ -8,11 +8,11 @@
                 <div class="col">
                     <h4>FOLLOW US</h4>
                     <ul>
-                        <li><img src="@/assets/img/footer-facebook.png" alt="icons-facebook"></li>
-                        <li><img src="@/assets/img/footer-periscope.png" alt="icons-periscope"></li>
-                        <li><img src="@/assets/img/footer-pinterest.png" alt="icons-pinterest"></li>
-                        <li><img src="@/assets/img/footer-twitter.png" alt="icons-twitter"></li>
-                        <li><img src="@/assets/img/footer-youtube.png" alt="icons-youtube"></li>
+                        <li><img src="../assets/img/footer-facebook.png" alt="icons-facebook"></li>
+                        <li><img src="../assets/img/footer-periscope.png" alt="icons-periscope"></li>
+                        <li><img src="../assets/img/footer-pinterest.png" alt="icons-pinterest"></li>
+                        <li><img src="../assets/img/footer-twitter.png" alt="icons-twitter"></li>
+                        <li><img src="../assets/img/footer-youtube.png" alt="icons-youtube"></li>
                     </ul>
                 </div>
             </div>
@@ -29,7 +29,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/css/variables.scss';
+@import '../assets/css/variables.scss';
 
 .bg-footer-bottom {
     background-color: $ColorFooter;

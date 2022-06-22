@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <img src="@/assets/img/dc-logo.png" alt="logo-dc">
+                    <img src="../assets/img/dc-logo.png" alt="logo-dc">
                 </div>
                 <div class="col">
                     <ul>
@@ -72,7 +72,7 @@ export default {
 
 
 <style lang="scss" scoped>
-@import '@/assets/css/variables.scss';
+@import '../assets/css/variables.scss';
 .row {
     display: flex;
     justify-content: space-between;

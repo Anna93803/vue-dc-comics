@@ -157,10 +157,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/css/variables.scss';
+@import '../assets/css/variables.scss';
 
 .bg-footer {
-    background-image: url("@/assets/img/footer-bg.jpg");
+    background-image: url("../assets/img/footer-bg.jpg");
     background-repeat: repeat;
     background-position: left center;
     .row {
@@ -191,7 +191,7 @@ export default {
         }
         .col:last-child {
             flex-grow: 1;
-            background-image: url("@/assets/img/dc-logo-bg.png");
+            background-image: url("../assets/img/dc-logo-bg.png");
             background-repeat: no-repeat;
             background-position: center right;
         }
