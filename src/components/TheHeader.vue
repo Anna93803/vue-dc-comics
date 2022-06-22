@@ -77,22 +77,25 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.25rem 0;
+    // padding: 1.25rem 0;
+    height: 140px;
 
     .col {
 
         ul {
             display: flex;
+            height: 140px;
 
             li {
                 border-bottom: 2px solid transparent;
                 text-transform: uppercase;
-                padding: 1.875rem 1.875rem 1.875rem 0;
                 font-weight: 500;
+                line-height: 8.75rem;
+                padding-right: 1.875rem;
 
                 &:hover {
                     color: $ColorPrimary;
-                    border-bottom: 2px solid $ColorPrimary;
+                    border-bottom: 4px solid $ColorPrimary;
                 }
             }
 

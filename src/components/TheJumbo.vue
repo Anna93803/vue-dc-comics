@@ -20,7 +20,7 @@ export default {
     position: relative;
     background-repeat: no-repeat;
     background-position: top center;
-    min-height: 400px;
+    height: 400px;
 
     .btn {
         background-color: $ColorPrimary;
