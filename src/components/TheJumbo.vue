@@ -24,12 +24,18 @@ export default {
 
     .btn {
         background-color: $ColorPrimary;
+        cursor: pointer;
         color: $ColorLight;
         position: absolute;
         bottom: -1.25rem;
         border: none;
         font-weight: 700;
         padding: .8125rem;
+        transition: 0.5s;
+
+        &:hover {
+            background-color: #7da4c9;;
+        }
     }
 }
 

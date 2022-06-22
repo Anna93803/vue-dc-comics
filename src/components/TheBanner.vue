@@ -80,6 +80,10 @@ export default {
                     margin-right: .9375rem;
                 }
 
+                &:hover {
+                    transform: scale(1.1);
+                }
+
             }
         }
     }

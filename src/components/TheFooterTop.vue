@@ -187,6 +187,10 @@ export default {
                     color: $ColorGrey;
                     text-decoration: none;
                 }
+
+                &:hover {
+                    text-decoration: underline;
+                }
             }
         }
         .col:last-child {

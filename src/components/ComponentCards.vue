@@ -22,6 +22,11 @@ export default {
 
 .cards {
     position: relative;
+    transition: 0.8s;
+
+    &:hover {
+            transform: scale(1.1)
+    }
 
     img {
         width: 100%;

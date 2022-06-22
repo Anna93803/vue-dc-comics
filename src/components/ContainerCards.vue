@@ -135,9 +135,15 @@ export default {
     }
     .btn {
         background-color: $ColorPrimary;
+        cursor: pointer;
         border: none;
         color: $ColorLight;
         padding: .6875rem 2.1875rem;
+        transition: 0.5s;
+
+        &:hover {
+            background-color: #7da4c9;;
+        }
     }
 }
 

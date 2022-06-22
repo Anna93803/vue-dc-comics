@@ -44,15 +44,25 @@ export default {
 
             .btn {
                 background-color: transparent;
+                cursor: pointer;
                 color: $ColorLight;
                 border: 1px solid $ColorPrimary;
                 padding: .625rem;
+                transition: 0.5s;
+
+                &:hover {
+                    background: $ColorPrimary;
+                }
             }
 
             h4 {
                 font-size: 1.125rem;
                 color: $ColorPrimary;
                 padding-right: .9375rem;
+            }
+
+            li img {
+                cursor: pointer;
             }
         }
 
